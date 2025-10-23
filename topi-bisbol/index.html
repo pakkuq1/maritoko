@@ -14,7 +14,12 @@
     .hero{display:grid;gap:22px;grid-template-columns:1fr}
     @media(min-width:900px){.hero{grid-template-columns:1.05fr .95fr}}
     .card{background:var(--card);border:1px solid #1f2937;border-radius:var(--radius);box-shadow:var(--shadow)}
-    .imgbox{position:relative;overflow:hidden;aspect-ratio:4/3;border-radius:var(--radius)}
+    .imgbox img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: contain; /* jaga proporsi gambar, tidak dipotong */
+}
     .imgbox img{width:100%;height:100%;object-fit:cover;display:block}
     .content{padding:18px 18px 8px}
     .title{font-size:30px;line-height:1.2;margin:0 0 8px}
@@ -36,6 +41,10 @@
       <div class="card">
         <div class="imgbox">
           <img id="pimg" src="topi-1.webp" alt="Topi Bisbol Unisex">
+          <img id="pimg" src="topi-2.jpg" alt="Topi Bisbol Unisex">
+          <img id="pimg" src="topi-1.jpg" alt="Topi Bisbol Unisex">
+          <img id="pimg" src="topi-1.jpg" alt="Topi Bisbol Unisex">
+          <img id="pimg" src="topi-5.webp" alt="Topi Bisbol Unisex">
         </div>
         <div class="content">
           <div class="title">Topi Bisbol Unisex</div>
